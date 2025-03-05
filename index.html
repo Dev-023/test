@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyScript on GitHub Pages</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <title>PyScript Example</title>
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-    <h1>PyScript Example</h1>
-    <input type="text" id="inputText">
+
+    <h2>PyScript Example</h2>
+    <input id="inputText" type="text" placeholder="Enter something...">
     <button py-click="process_input()">Submit</button>
     <p id="output"></p>
 
@@ -18,5 +18,6 @@
             text = Element("inputText").value
             Element("output").write(f"You entered: {text}")
     </py-script>
+
 </body>
 </html>
